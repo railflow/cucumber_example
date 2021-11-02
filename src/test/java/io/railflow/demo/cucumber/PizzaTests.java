@@ -23,7 +23,7 @@ public class PizzaTests {
 	private List<WebElement> results;
 
 	@Before
-	public void before() {
+	public void beforeScenario() {
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		final ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-fullscreen");
