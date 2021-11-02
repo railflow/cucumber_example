@@ -8,6 +8,6 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = { "json:target/test-report.json" })
-public class Tests {
+public class TestRunner {
 
 }
