@@ -14,6 +14,7 @@ public class WebDriverProvider {
 		if (webDriver == null) {
 			WebDriverManager.chromedriver().setup();
 			final ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
 			options.addArguments("--start-fullscreen");
 			webDriver = new ChromeDriver(options);
 			CURRENT_DRIVER.set(webDriver);
