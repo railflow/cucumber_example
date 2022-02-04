@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = { "json:target/test-report.json" })
+@CucumberOptions(plugin = { "json:target/test-report.json", "html:target/test-report.html" })
 public class TestRunner {
 
 }
