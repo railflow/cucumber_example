@@ -17,7 +17,8 @@ public class CucumberHooks {
 	@AfterStep
 	public void afterStep(final Scenario scenario) {
 		if (scenario.isFailed()) {
-			scenario.attach(((TakesScreenshot) WebDriverProvider.getWebDriver()).getScreenshotAs(OutputType.BYTES), "image/png", "failure.png");
+			scenario.attach(((TakesScreenshot) WebDriverProvider.getWebDriver()).getScreenshotAs(OutputType.BYTES), "image/png",
+					scenario.getName() + "_failure.png");
 		}
 	}
 }
